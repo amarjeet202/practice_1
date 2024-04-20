@@ -2,47 +2,102 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(8, 169, 249);
+}
+.navbar{
+    height: 10vh;
+    background-color: rgb(47, 91, 136);
+    border-bottom:5px solid rgb(0, 0, 0) ;
+    position: relative;
+    display: flex;
+}
+.navbar h1{
+    background-color: rgb(47, 91, 136);
+    font-size: 4rem;
+    color:rgb(64, 0, 143);
+}
+.navbar h1:hover{
+    cursor: pointer;
+    color: rgb(29, 0, 174);
+}
+.navbar ul{
+    display: flex;
+    gap: 5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-left: 20px;
+    background: rgb(47, 91, 136);
+}
+.navbar ul li{
+    cursor: pointer;
+    list-style: none;
+    color: rgb(43, 255, 0);
+    font-weight: bold;
+    font-size: 20px;
+    background: rgb(47, 91, 136);
+}
+.navbar ul li a{
+    cursor: pointer;
+    list-style: none;
+    color: rgb(43, 255, 0);
+    font-weight: bold;
+    font-size: 20px;
+    background: rgb(47, 91, 136);
+    text-decoration: none;
+}
+.navbar ul li:hover{
+    color: skyblue;
+}
+.navbar ul li a:hover{
+    color: skyblue;
 }
 .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 5px solid red;
+    border: 5px solid rgb(255, 234, 0);
     margin: 5px 2px 5px 2px;
 
 }
 .container2{
     display: flex;
+    font-size: 1rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 48, 96);
     justify-content: center;
     align-items: center;
-    border: 5px solid red;
+    border: 5px solid rgb(162, 0, 255);
     margin: 5px 2px 10px 2px;
     text-align: center;
 }
 
-.box1{
+.main_cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+    background: linear-gradient(120deg,red,rgba(43, 43, 229, 0.797),rgb(84, 2, 165),rgb(255, 0, 238));
+}
+.cards{
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
     height: 30vh;
-    width: 20vw;
-    border: 5px solid blue;
-    margin: auto;
+    width: 15vw;
+    border-radius: 10px;
+    border: solid rgb(29, 0, 109);
+    background-color: rgb(0, 191, 255);
 }
-.box2{
-    height: 20vh;
-    width: 10vw;
-    position: relative;
-    border: 5px solid red;
-    border-top-left-radius: 50%;
+.cards img{
+    padding: 3px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
 }
-.box2::before{
-    content: '';
-    height: 5vh;
-    width: 5vh;
-    border-radius: 50%;
-    border: 2px solid green;
-
-    position: absolute;
-    top:0;
-    left:0;
-
+.cards:hover{
+    box-shadow: 0 0 10px rgb(29, 0, 109);
+    background-color: aquamarine;
+    scale: 1.1;
 }
